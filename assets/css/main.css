@@ -101,7 +101,10 @@
 
 .img-logo {
   margin-top: 5%;
-  width: 12%; }
+  width: 12%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%); }
 
 .slide-area {
   max-width: 1920px;
@@ -139,8 +142,8 @@
 
 .swiper-slide img {
   display: block;
-  width: 320px;
-  height: 400px;
+  width: 100%;
+  height: auto;
   object-fit: fill; }
 
 .main-slide {
@@ -188,8 +191,7 @@
   transition: 0.35s; }
 
 .swiper-slide {
-  filter: brightness(100%);
-  cursor: pointer; }
+  filter: brightness(100%); }
 
 .swiper-slide:hover img {
   filter: brightness(115%); }
@@ -257,6 +259,9 @@ html {
 @media (max-width: 1440px) {
   #tranding {
     padding: 7rem 0; } }
+@media (max-width: 820px) {
+  #tranding .container {
+    zoom: 1.3; } }
 #tranding .tranding-slider {
   height: 520px;
   padding: 2rem 0;
@@ -394,8 +399,7 @@ html {
       color: #f5f5f5; }
 
 .buy-action {
-  position: absolute;
-  bottom: -31px;
+  display: block;
   left: 0;
   height: 27px;
   width: 114px;
@@ -410,13 +414,27 @@ html {
     .buy-action:hover p {
       transform: scale(1.15); }
 
+.action-container {
+  position: absolute;
+  bottom: -31px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 10px; }
+
+.social {
+  display: block; }
+  .social i {
+    font-size: 23px;
+    color: #f5f5f5; }
+
 .tranding-slide {
   z-index: 50; }
-  .tranding-slide .buy-action {
+  .tranding-slide .action-container {
     display: none; }
 
-.swiper-slide-active .buy-action {
-  display: block !important; }
+.swiper-slide-active .action-container {
+  display: flex !important; }
 
 .btn-main-next::after,
 .btn-main-prev::after {
@@ -434,34 +452,111 @@ html {
   overflow: visible; }
 
 @media (max-width: 1600px) {
-  .swiper-slide img {
-    height: 282px; }
+  .img-logo {
+    margin-top: 3%; } }
+@media (max-width: 1366px) {
+  .main-swiper {
+    max-width: 85%;
+    overflow: hidden;
+    padding: 10px; } }
+@media (max-width: 1280px) {
+  .main-swiper {
+    max-width: 90%;
+    overflow: hidden;
+    padding: 10px; }
 
-  .main-slide {
-    margin: 0 auto;
-    margin-top: 5%;
-    width: 85%; }
+  .img-logo {
+    width: 13%; }
 
   .slide-area {
-    max-height: 61%; } }
-@media (max-width: 1366px) {
-  .swiper-slide img {
-    height: 225px; }
-
-  .main-slide {
-    width: 83%; } }
-@media (max-width: 1280px) {
-  .swiper-slide img {
-    height: 270px; }
-
-  .main-slide {
-    width: 100%;
+    height: 59%; } }
+@media (max-width: 1024px) {
+  .img-logo {
     margin-top: 7%; }
 
   .img-logo {
     width: 17%; } }
-@media (max-width: 820px) {
-  .main-slide {
+@media (min-width: 821px) {
+  .d-mobile {
     display: none; } }
+@media (max-width: 820px) {
+  .d-mobile {
+    display: block; }
+
+  .img-logo {
+    width: 30%;
+    margin-top: 7%;
+    padding-bottom: 3%; }
+
+  .slide-area {
+    display: none; }
+
+  .my_popup {
+    position: static;
+    background-color: initial;
+    background: url("../images/bg_2.png");
+    background-size: cover; }
+
+  .img-logo {
+    position: static;
+    transform: translate(0); }
+
+  .my_container {
+    height: auto; }
+
+  #tranding {
+    padding-bottom: 0;
+    padding-top: 0; }
+
+  .count-mobile {
+    color: #f5f5f5;
+    font-family: "Taviraj", serif;
+    text-align: center;
+    margin-bottom: 0; }
+
+  .my_popup.d-none {
+    display: block !important; }
+
+  .tranding-slider-control {
+    width: 50%;
+    left: 50%;
+    transform: translate(-50%); }
+
+  .head-sub {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 60px;
+    color: #f5f5f5; }
+    .head-sub h1 {
+      font-size: 65px;
+      color: #f5f5f5; }
+
+  .line {
+    position: static; }
+
+  .tranding-slider .swiper-slide:first-child {
+    padding-top: 50px; } }
+@media (max-width: 414px) {
+  .tranding-slider-control {
+    bottom: 46px;
+    z-index: 50;
+    width: 100%;
+    left: 0;
+    transform: translate(0); }
+    .tranding-slider-control .swiper-pagination {
+      width: 100%; }
+    .tranding-slider-control .swiper-button-next,
+    .tranding-slider-control .swiper-button-prev {
+      display: none; }
+
+  .action-container {
+    bottom: -40px; }
+
+  .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+    background-color: #f5f5f5 !important; }
+
+  .icon-container-close {
+    right: 6px; } }
 
 /*# sourceMappingURL=main.css.map */
