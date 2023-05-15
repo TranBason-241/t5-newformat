@@ -269,7 +269,7 @@ html {
 
 @media (max-width: 500px) {
   #tranding .tranding-slider {
-    height: 45rem; } }
+    height: 55rem; } }
 .tranding-slide {
   width: 37rem;
   height: 45rem;
@@ -414,16 +414,28 @@ html {
     .buy-action:hover p {
       transform: scale(1.15); }
 
+.des-container {
+  display: none;
+  left: 0;
+  flex: 0 1 100%; }
+  .des-container p {
+    color: #f5f5f5;
+    font-size: 15px;
+    transition: all 0.2s;
+    margin-bottom: 10px;
+    text-align: left; }
+
 .action-container {
   position: absolute;
   bottom: -31px;
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding-right: 10px; }
+  padding-right: 10px;
+  flex-wrap: wrap; }
 
 .social {
-  display: block; }
+  display: none; }
   .social i {
     font-size: 23px;
     color: #f5f5f5; }
@@ -434,7 +446,8 @@ html {
     display: none; }
 
 .swiper-slide-active .action-container {
-  display: flex !important; }
+  display: flex !important;
+  justify-content: start; }
 
 .btn-main-next::after,
 .btn-main-prev::after {
@@ -533,13 +546,13 @@ html {
       color: #f5f5f5; }
 
   .line {
-    position: static; }
-
-  .tranding-slider .swiper-slide:first-child {
-    padding-top: 50px; } }
+    position: static; } }
 @media (max-width: 414px) {
+  .social {
+    display: none !important; }
+
   .tranding-slider-control {
-    bottom: 46px;
+    bottom: 28%;
     z-index: 50;
     width: 100%;
     left: 0;
@@ -551,12 +564,25 @@ html {
       display: none; }
 
   .action-container {
-    bottom: -40px; }
+    bottom: -113px; }
 
   .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
     background-color: #f5f5f5 !important; }
 
   .icon-container-close {
-    right: 6px; } }
+    display: none; }
+
+  #tranding .container {
+    zoom: 1.38; }
+
+  .swiper-pagination-progressbar {
+    background: rgba(172, 172, 172, 0.25);
+    position: absolute; }
+
+  .swiper-pagination-progressbar.swiper-pagination-horizontal {
+    height: 2px; }
+
+  .des-container {
+    display: block; } }
 
 /*# sourceMappingURL=main.css.map */

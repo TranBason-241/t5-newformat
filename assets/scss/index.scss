@@ -302,7 +302,7 @@ html {
 
 @media (max-width: 500px) {
     #tranding .tranding-slider {
-        height: 45rem;
+        height: 55rem;
     }
 }
 
@@ -502,6 +502,20 @@ html {
     }
 }
 
+.des-container {
+    display: none;
+    left: 0;
+
+    flex: 0 1 100%;
+    p {
+        color: #f5f5f5;
+        font-size: 15px;
+        transition: all 0.2s;
+        margin-bottom: 10px;
+        text-align: left;
+    }
+}
+
 .action-container {
     position: absolute;
     bottom: -31px;
@@ -509,9 +523,10 @@ html {
     display: flex;
     justify-content: space-between;
     padding-right: 10px;
+    flex-wrap: wrap;
 }
 .social {
-    display: block;
+    display: none;
     i {
         font-size: 23px;
         color: #f5f5f5;
@@ -527,6 +542,7 @@ html {
 .swiper-slide-active {
     .action-container {
         display: flex !important;
+        justify-content: start;
     }
 }
 
@@ -592,6 +608,8 @@ html {
     }
 }
 @media (max-width: 820px) {
+    .pc {
+    }
     .d-mobile {
         display: block;
     }
@@ -649,16 +667,19 @@ html {
     .line {
         position: static;
     }
-    .tranding-slider {
-        .swiper-slide:first-child {
-            padding-top: 50px;
-        }
-    }
+    // .tranding-slider {
+    //     .swiper-slide:first-child {
+    //         padding-top: 50px;
+    //     }
+    // }
 }
 
 @media (max-width: 414px) {
+    .social {
+        display: none !important;
+    }
     .tranding-slider-control {
-        bottom: 46px;
+        bottom: 28%;
         z-index: 50;
         width: 100%;
         left: 0;
@@ -672,7 +693,7 @@ html {
         }
     }
     .action-container {
-        bottom: -40px;
+        bottom: -113px;
         // right: 0px !important;
         // left: initial;
     }
@@ -680,6 +701,19 @@ html {
         background-color: #f5f5f5 !important;
     }
     .icon-container-close {
-        right: 6px;
+        display: none;
+    }
+    #tranding .container {
+        zoom: 1.38;
+    }
+    .swiper-pagination-progressbar {
+        background: rgba(172, 172, 172, 0.25);
+        position: absolute;
+    }
+    .swiper-pagination-progressbar.swiper-pagination-horizontal {
+        height: 2px;
+    }
+    .des-container {
+        display: block;
     }
 }
