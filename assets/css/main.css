@@ -234,24 +234,20 @@ html {
 
 @media (min-width: 1440px) {
   #tranding .container {
-    zoom: 1.17; }
+    zoom: 1; }
 
   /* html {
   zoom: 1;
 } */ }
 #tranding .container {
-  max-width: 534px !important;
+  max-width: 920px !important;
   padding: 0 1rem;
   margin: 0 auto;
-  margin-top: 5%; }
+  /* margin-top: 5%; */
+  height: auto; }
 
 .text-center {
   text-align: center; }
-
-.section-heading {
-  font-size: 3rem;
-  color: var(--primary);
-  padding: 2rem 0; }
 
 #tranding {
   padding: 4rem 0; }
@@ -263,7 +259,7 @@ html {
   #tranding .container {
     zoom: 1.3; } }
 #tranding .tranding-slider {
-  height: 520px;
+  height: 715px;
   padding: 2rem 0;
   position: relative; }
 
@@ -271,8 +267,8 @@ html {
   #tranding .tranding-slider {
     height: 55rem; } }
 .tranding-slide {
-  width: 37rem;
-  height: 45rem;
+  width: 515px;
+  height: 644px;
   position: relative; }
 
 @media (max-width: 500px) {
@@ -284,8 +280,8 @@ html {
     width: 28rem !important;
     height: 36rem !important; } }
 .tranding-slide .tranding-slide-img img {
-  width: 37rem;
-  height: 45rem;
+  width: 515px;
+  height: 644px;
   object-fit: cover; }
 
 .tranding-slide .tranding-slide-content {
@@ -301,11 +297,6 @@ html {
   left: 2rem;
   color: var(--white); }
 
-.food-rating {
-  padding-top: 1rem;
-  display: flex;
-  gap: 1rem; }
-
 .rating ion-icon {
   color: var(--primary); }
 
@@ -315,10 +306,13 @@ html {
 
 .tranding-slider-control {
   position: relative;
-  bottom: 8px;
+  bottom: 2px;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  width: 62%;
+  left: 50%;
+  transform: translate(-50%); }
 
 .tranding-slider-control .swiper-button-next {
   left: 58% !important;
@@ -401,8 +395,8 @@ html {
 .buy-action {
   display: block;
   left: 0;
-  height: 27px;
-  width: 114px;
+  height: 30px;
+  width: 130px;
   background: #c93d3d;
   transition: all 0.5s; }
   .buy-action p {
@@ -427,7 +421,7 @@ html {
 
 .action-container {
   position: absolute;
-  bottom: -31px;
+  bottom: -36px;
   width: 100%;
   display: flex;
   justify-content: space-between;
