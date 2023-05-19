@@ -34,6 +34,20 @@
   font-weight: normal;
   font-style: normal;
   font-display: swap; }
+@font-face {
+  font-family: "Bai Jamjuree";
+  src: url("../fonts/BaiJamjuree-Regular.eot");
+  src: url("../fonts/BaiJamjuree-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/BaiJamjuree-Regular.woff2") format("woff2"), url("../fonts/BaiJamjuree-Regular.woff") format("woff"), url("../fonts/BaiJamjuree-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: "Cormorant SC";
+  src: url("../fonts/CormorantSC-Regular.eot");
+  src: url("../fonts/CormorantSC-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/CormorantSC-Regular.woff2") format("woff2"), url("../fonts/CormorantSC-Regular.woff") format("woff"), url("../fonts/CormorantSC-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
 .my_container {
   background-color: #e04d4d;
   overflow: hidden;
@@ -240,7 +254,7 @@ html {
   zoom: 1;
 } */ }
 #tranding .container {
-  max-width: 920px !important;
+  max-width: 733px !important;
   padding: 0 1rem;
   margin: 0 auto;
   /* margin-top: 5%; */
@@ -250,7 +264,10 @@ html {
   text-align: center; }
 
 #tranding {
-  padding: 4rem 0; }
+  padding: 4rem 0;
+  top: 50%;
+  transform: translateY(-50%);
+  position: relative; }
 
 @media (max-width: 1440px) {
   #tranding {
@@ -267,20 +284,20 @@ html {
   #tranding .tranding-slider {
     height: 55rem; } }
 .tranding-slide {
-  width: 515px;
+  width: 458px;
   height: 644px;
   position: relative; }
 
 @media (max-width: 500px) {
   .tranding-slide {
-    width: 28rem !important;
-    height: 36rem !important; }
+    width: 297px !important;
+    height: 418px !important; }
 
   .tranding-slide .tranding-slide-img img {
-    width: 28rem !important;
-    height: 36rem !important; } }
+    width: 297px !important;
+    height: 418px !important; } }
 .tranding-slide .tranding-slide-img img {
-  width: 515px;
+  width: 458px;
   height: 644px;
   object-fit: cover; }
 
@@ -310,7 +327,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 62%;
+  width: 70%;
   left: 50%;
   transform: translate(-50%); }
 
@@ -360,10 +377,13 @@ html {
   position: absolute;
   bottom: -8px;
   width: fit-content;
-  font-size: 18px;
+  font-size: 25px;
   color: #aaaaa9;
   left: 50%;
-  transform: translate(-50%); }
+  transform: translate(-50%);
+  font-family: "Cormorant SC";
+  font-weight: normal;
+  font-style: normal; }
 
 .tranding-slider-control .swiper-pagination .swiper-pagination-bullet {
   filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1)); }
@@ -376,8 +396,8 @@ html {
   overflow: visible; }
 
 .icon-container-close {
-  width: 20px;
-  height: 22px;
+  width: 30px;
+  height: 30px;
   position: absolute;
   right: 0;
   top: 0;
@@ -400,9 +420,12 @@ html {
   background: #c93d3d;
   transition: all 0.5s; }
   .buy-action p {
-    color: #f5f5f5;
-    font-size: 17px;
-    transition: all 0.2s; }
+    color: #ffffff;
+    font-family: "Bai Jamjuree";
+    font-weight: normal;
+    font-style: normal;
+    transition: all 0.2s;
+    font-size: 17px; }
   .buy-action:hover {
     cursor: pointer; }
     .buy-action:hover p {
@@ -460,12 +483,21 @@ html {
 
 @media (max-width: 1600px) {
   .img-logo {
-    margin-top: 3%; } }
+    margin-top: 3%; }
+
+  #tranding .container {
+    zoom: 0.85; } }
 @media (max-width: 1366px) {
   .main-swiper {
     max-width: 85%;
     overflow: hidden;
-    padding: 10px; } }
+    padding: 10px; }
+
+  #tranding .container {
+    zoom: 0.75; }
+
+  .tranding-slider-control {
+    width: 91%; } }
 @media (max-width: 1280px) {
   .main-swiper {
     max-width: 90%;
@@ -473,7 +505,7 @@ html {
     padding: 10px; }
 
   .img-logo {
-    width: 13%; }
+    width: 23%; }
 
   .slide-area {
     height: 59%; } }
@@ -540,13 +572,19 @@ html {
       color: #f5f5f5; }
 
   .line {
-    position: static; } }
+    position: static; }
+
+  #tranding {
+    display: block !important;
+    position: static !important;
+    transform: translateY(0);
+    padding-bottom: 100px; } }
 @media (max-width: 414px) {
   .social {
     display: none !important; }
 
   .tranding-slider-control {
-    bottom: 28%;
+    bottom: 17%;
     z-index: 50;
     width: 100%;
     left: 0;
@@ -558,7 +596,7 @@ html {
       display: none; }
 
   .action-container {
-    bottom: -113px; }
+    top: 104%; }
 
   .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
     background-color: #f5f5f5 !important; }
@@ -577,6 +615,13 @@ html {
     height: 2px; }
 
   .des-container {
-    display: block; } }
+    display: block; }
+
+  .img-logo {
+    width: 41%;
+    margin-top: 16%; }
+
+  #tranding {
+    padding-bottom: 100px !important; } }
 
 /*# sourceMappingURL=main.css.map */

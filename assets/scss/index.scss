@@ -260,7 +260,7 @@ html {
 }
 #tranding {
     .container {
-        max-width: 920px !important;
+        max-width: 733px !important;
         padding: 0 1rem;
         margin: 0 auto;
         /* margin-top: 5%; */
@@ -274,6 +274,9 @@ html {
 
 #tranding {
     padding: 4rem 0;
+    top: 50%;
+    transform: translateY(-50%);
+    position: relative;
 }
 
 @media (max-width: 1440px) {
@@ -302,24 +305,28 @@ html {
 }
 
 .tranding-slide {
-    width: 515px;
+    width: 458px;
     height: 644px;
     position: relative;
 }
 
 @media (max-width: 500px) {
     .tranding-slide {
-        width: 28rem !important;
-        height: 36rem !important;
+        // width: 28rem !important;
+        // height: 36rem !important;
+        width: 297px !important;
+        height: 418px !important;
     }
     .tranding-slide .tranding-slide-img img {
-        width: 28rem !important;
-        height: 36rem !important;
+        // width: 28rem !important;
+        // height: 36rem !important;
+        width: 297px !important;
+        height: 418px !important;
     }
 }
 
 .tranding-slide .tranding-slide-img img {
-    width: 515px;
+    width: 458px;
     height: 644px;
     // border-radius: 2rem;
     object-fit: cover;
@@ -355,7 +362,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 62%;
+    width: 70%;
     left: 50%;
     transform: translate(-50%);
 }
@@ -431,10 +438,13 @@ html {
     position: absolute;
     bottom: -8px;
     width: fit-content;
-    font-size: 18px;
+    font-size: 25px;
     color: #aaaaa9;
     left: 50%;
     transform: translate(-50%);
+    font-family: "Cormorant SC";
+    font-weight: normal;
+    font-style: normal;
 }
 
 .tranding-slider-control .swiper-pagination .swiper-pagination-bullet {
@@ -453,8 +463,8 @@ html {
 }
 
 .icon-container-close {
-    width: 20px;
-    height: 22px;
+    width: 30px;
+    height: 30px;
     position: absolute;
     right: 0;
     top: 0;
@@ -480,9 +490,12 @@ html {
     width: 130px;
     background: #c93d3d;
     p {
-        color: #f5f5f5;
-        font-size: 17px;
+        color: #ffffff;
+        font-family: "Bai Jamjuree";
+        font-weight: normal;
+        font-style: normal;
         transition: all 0.2s;
+        font-size: 17px;
     }
     transition: all 0.5s;
     &:hover {
@@ -564,6 +577,9 @@ html {
     .img-logo {
         margin-top: 3%;
     }
+    #tranding .container {
+        zoom: 0.85;
+    }
 }
 
 @media (max-width: 1366px) {
@@ -571,6 +587,12 @@ html {
         max-width: 85%;
         overflow: hidden;
         padding: 10px;
+    }
+    #tranding .container {
+        zoom: 0.75;
+    }
+    .tranding-slider-control {
+        width: 91%;
     }
 }
 @media (max-width: 1280px) {
@@ -580,7 +602,7 @@ html {
         padding: 10px;
     }
     .img-logo {
-        width: 13%;
+        width: 23%;
     }
     .slide-area {
         height: 59%;
@@ -664,6 +686,13 @@ html {
     //         padding-top: 50px;
     //     }
     // }
+    #tranding {
+        display: block !important;
+
+        position: static !important;
+        transform: translateY(0);
+        padding-bottom: 100px;
+    }
 }
 
 @media (max-width: 414px) {
@@ -671,7 +700,7 @@ html {
         display: none !important;
     }
     .tranding-slider-control {
-        bottom: 28%;
+        bottom: 17%;
         z-index: 50;
         width: 100%;
         left: 0;
@@ -685,7 +714,7 @@ html {
         }
     }
     .action-container {
-        bottom: -113px;
+        top: 104%;
         // right: 0px !important;
         // left: initial;
     }
@@ -707,5 +736,14 @@ html {
     }
     .des-container {
         display: block;
+    }
+
+    .img-logo {
+        width: 41%;
+        margin-top: 16%;
+    }
+
+    #tranding {
+        padding-bottom: 100px !important;
     }
 }
