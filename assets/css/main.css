@@ -481,6 +481,12 @@ html {
 .main-swiper {
   overflow: visible; }
 
+.l-03 {
+  left: -6%; }
+
+.r-03 {
+  right: -6%; }
+
 @media (max-width: 1600px) {
   .img-logo {
     margin-top: 3%; }
